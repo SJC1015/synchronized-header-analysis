@@ -83,7 +83,7 @@ Space losses: 0 bytes internal + 4 bytes external = 4 bytes total
 
 然后找到了 [JOL：Java 对象内存布局 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/621287001) 这篇文章反正就看了下去
 
-![HotSpot-32-MarkWord](https://raw.githubusercontent.com/SJC1015/synchronized-header-analysis/main/src/main/resources/images/HotSpot-32-MarkWord.webp)
+![HotSpot-32-MarkWord](https://github.com/SJC1015/synchronized-header-analysis/blob/main/src/main/resources/images/HotSpot-32-MarkWord.webp?raw=true)
 
 ![HotSpot-64-MarkWord](https://raw.githubusercontent.com/SJC1015/synchronized-header-analysis/main/src/main/resources/images/HotSpot-64-MarkWord.jpg)
 
@@ -268,11 +268,11 @@ for (long off = 0; off < headerSize(); off += 4) {
 
 ###### 不调用 native hashcode 的情况
 
-![synchronized-noHashcode-flow-chart](https://raw.githubusercontent.com/SJC1015/synchronized-header-analysis/main/src/main/resources/images/synchronized-noHashcode-flow-chart.jpg)
+![synchronized-noHashcode-flow-chart](https://github.com/SJC1015/synchronized-header-analysis/blob/main/src/main/resources/images/synchronized-noHashcode-flow-chart.jpg?raw=true)
 
 ###### 调用 native hashcode 的情况
 
-![synchronized-useHashcode-flow-chart](https://raw.githubusercontent.com/SJC1015/synchronized-header-analysis/main/src/main/resources/images/synchronized-useHashcode-flow-chart.jpg)
+![synchronized-useHashcode-flow-chart](https://github.com/SJC1015/synchronized-header-analysis/blob/main/src/main/resources/images/synchronized-useHashcode-flow-chart.jpg?raw=true)
 
 这里关于 native hashcode 相关的猜测
 
